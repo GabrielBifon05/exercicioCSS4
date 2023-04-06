@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="container">
+            <h1>AquaTec</h1>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Simulador</a></li>
+                <li>|</li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="container">
+            <div class="form">
+                <h1 style="font-size: 30px;">Bem-vindo!</h1>
+                <h1 class="label">Nome:</h1>
+                <input type="text" placeholder="Seu nome">
+                <h1 class="label">E-mail:</h1>
+                <input type="email"  placeholder="meuemail@provedor.com">
+                <h1 class="label">Senha:</h1>
+                <input type="password" placeholder="senha">
+                <h1 class="label">Confirmação de senha:</h1>
+                <input type="password" placeholder="senha">
+                <button>Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>AcquaTec©2023 todos os direitos reservados</p>
+    </div>
+</body>
+
+</html>
+    * {
+        margin: 0;
+    }
+
+    /* Começo Header */
+    .header {
+        padding: 20px;
+        background-color: black;
+        border-bottom: solid 3px #32a7b1;
+    }
+
+    .header h1 {
+        color: #37a7b1;
+    }
+
+    .header a{
+        text-decoration: none;
+        color:rgb(204, 116, 0);
+    }
+
+    .container {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .navbar {
+        color: rgb(204, 116, 0);
+        list-style: none;
+
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Fim do header */
+
+    /* Começo do Banner */
+    .banner {
+        width: 100%;
+        height: 450px;
+        background-image: url(img/bg-jelly-fish-para_outras_pags.png);
+    }
+
+    .banner .container {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .banner .container {
+        color: white;
+        font-size: 30px;
+        width: 230px;
+    }
+
+    .banner span {
+        color: blue;
+        font-weight: bold;
+    }
+
+    /* Fim do Banner */
+    .form {
+        background-color: #cdcdcd;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        color: #db7093;
+    }
+
+    .label {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    input {
+        border: solid 3px #32a7b1;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .form button {
+        background-color: #fc538b;
+        border: 0px;
+        border-radius: 9px;
+
+        font-size: 20px;
+        color: white;
+    }
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        background-color: #32a7b1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
